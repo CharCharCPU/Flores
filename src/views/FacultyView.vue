@@ -106,7 +106,7 @@ import { faculty } from '../data/content'
 </template>
 
 <script setup>
-// Replace the URLs with actual links later. Me too lazy cause I can't see it
+//TODO: Replace the URLs with actual links later. Me too lazy cause I can't see it
 
 const deanInfo = {
   name: "MA. CHRISTINA A. QUIJANO, MSCS",

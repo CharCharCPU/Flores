@@ -12,12 +12,6 @@ const routes = [
     meta: { title: 'About the College' }
   },
 
-  { path: '/programs',
-    name: 'programs',
-    component: () => import('../views/ProgramsView.vue'),
-    meta: { title: 'Academic Programs' }
-  },
-
   { path: '/programs/bsit',
     name: 'bsit',
     component: () => import('../views/BsitView.vue'),

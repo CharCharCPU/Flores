@@ -16,8 +16,8 @@ onMounted(async () => {
   <div v-if="loading" class="loading-screen">Loading…</div>
 
   <div v-else class="programs-page">
-    <PageHero 
-      title="Academic Programs" 
+    <PageHero
+      title="Academic Programs"
       subtitle="Discover the pathways we offer. Explore how practical work and academic study connect to prepare you for the future."
     />
 
@@ -64,7 +64,9 @@ onMounted(async () => {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 2.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
 }

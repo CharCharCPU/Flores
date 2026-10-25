@@ -1,72 +1,86 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-  { path: '/',
+  {
+    path: '/',
     name: 'home',
     component: () => import('../views/HomeView.vue'),
-    meta: { title: 'Home' }
+    meta: { title: 'Home' },
   },
 
-  { path: '/about',
+  {
+    path: '/about',
     name: 'about',
     component: () => import('../views/AboutView.vue'),
-    meta: { title: 'About the College' }
+    meta: { title: 'About the College' },
   },
 
   {
     path: '/programs',
     name: 'programs',
     component: () => import('../views/ProgramsView.vue'),
-    meta: { title: 'Our Programs' }
+    meta: { title: 'Our Programs' },
   },
 
-  { path: '/programs/bsit',
+  {
+    path: '/programs/information-technology',
     name: 'bsit',
     component: () => import('../views/BsitView.vue'),
-    meta: { title: 'BS Information Technology' }
+    meta: { title: 'BS Information Technology' },
   },
 
-  { path: '/programs/bscs',
+  {
+    path: '/programs/computer-science',
     name: 'bscs',
     component: () => import('../views/BscsView.vue'),
-    meta: { title: 'BS Computer Science' }
+    meta: { title: 'BS Computer Science' },
   },
 
-  { path: '/programs/bsdmia',
+  {
+    path: '/programs/digital-media-and-interactive-arts',
     name: 'bsdmia',
-    component: () => import('../views/BsdmiaView.vue'),
-    meta: { title: 'BS Digital Media and Interactive Arts' }
+    component: () => import('../views/dmiaView.vue'),
+    meta: { title: 'BS Digital Media and Interactive Arts' },
   },
 
-  { path: '/programs/blis',
+  {
+    path: '/programs/library-and-information-science',
     name: 'blis',
     component: () => import('../views/BlisView.vue'),
-    meta: { title: 'Bachelor of Library and Information Science' }
+    meta: { title: 'Bachelor of Library and Information Science' },
   },
 
-  { path: '/faculty',
+  {
+    path: '/faculty',
     name: 'faculty',
     component: () => import('../views/FacultyView.vue'),
-    meta: { title: 'Faculty and Staff' }
+    meta: { title: 'Faculty and Staff' },
   },
 
-  { path: '/news',
+  {
+    path: '/news',
     name: 'news',
     component: () => import('../views/NewsView.vue'),
-    meta: { title: 'News, Events and Announcements' }
+    meta: { title: 'News, Events and Announcements' },
   },
 
-  { path: '/contact', name: 'contact',
+  {
+    path: '/contact',
+    name: 'contact',
     component: () => import('../views/ContactView.vue'),
-    meta: { title: 'Contact Us' }
-  }
+    meta: { title: 'Contact Us' },
+  },
 ]
 const router = createRouter({
-  history: createWebHistory(), routes,
-  scrollBehavior(to, from, saved) { // smooth in-page and cross-page scrolling
+  history: createWebHistory(),
+  routes,
+  scrollBehavior(to, from, saved) {
+    // smooth in-page and cross-page scrolling
     if (to.hash) return { el: to.hash, top: 90, behavior: 'smooth' }
     return saved || { top: 0, behavior: 'smooth' }
-  }
+  },
 })
-router.afterEach(to => { document.title = `${to.meta.title} | CCS | CPU` })
+router.afterEach((to) => {
+  document.title = `${to.meta.title} | CCS | CPU`
+})
 export default router

@@ -20,21 +20,28 @@ export const fetchHomeContent = () => {
             category: 'Technology',
             title: 'BS Information Technology',
             description: 'Focuses on the application of technology to solve business problems.',
-            link: '/programs/bsit',
+            link: '/programs/information-technology',
           },
           {
             id: 'bscs',
             category: 'Computer Science',
             title: 'BS Computer Science',
             description: 'Emphasises algorithms, software engineering, and computational theory.',
-            link: '/programs/bscs',
+            link: '/programs/computer-science',
           },
           {
-            id: 'bsdmia',
+            id: 'dmia',
             category: 'Multimedia Arts',
             title: 'BS Digital Media & Interactive Arts',
             description: 'A program blending creative design with interactive technologies.',
-            link: '/programs/bsdmia',
+            link: '/programs/digital-media-and-interactive-arts',
+          },
+          {
+            id: 'blis',
+            category: 'Information Science',
+            title: 'BS Library & Information Science',
+            description: 'Prepares students for managing information resources and services.',
+            link: '/programs/library-and-information-science',
           },
         ],
         pathways: [
@@ -115,7 +122,7 @@ export const fetchAllPrograms = () => {
           title: 'BS Information Technology',
           description:
             'Focuses on the application of technology to solve business problems. Covers networking, database management, web development, and cybersecurity.',
-          link: '/programs/bsit',
+          link: '/programs/information-technology',
         },
         {
           id: 'bscs',
@@ -123,7 +130,7 @@ export const fetchAllPrograms = () => {
           title: 'BS Computer Science',
           description:
             'Emphasises algorithms, software engineering, and computational theory. Prepares students for advanced software development and AI research.',
-          link: '/programs/bscs',
+          link: '/programs/computer-science',
         },
         {
           id: 'bsdmia',
@@ -131,7 +138,7 @@ export const fetchAllPrograms = () => {
           title: 'BS Digital Media & Interactive Arts',
           description:
             'A program blending creative design with interactive technologies. Includes digital storytelling, game development, and UX/UI design.',
-          link: '/programs/bsdmia',
+          link: '/programs/digital-media-and-interactive-arts',
         },
         {
           id: 'blis',
@@ -139,7 +146,7 @@ export const fetchAllPrograms = () => {
           title: 'BS Library & Information Science',
           description:
             'Prepares students for managing information resources and services. Covers cataloguing, digital libraries, and archival studies.',
-          link: '/programs/blis',
+          link: '/programs/library-and-information-science',
         },
       ])
     }, 300)
@@ -152,54 +159,99 @@ export const fetchProgramDetails = (programCode) => {
     setTimeout(() => {
       const programs = {
         bsdmia: {
-          title: 'BS Digital Media and Interactive Arts',
-          description:
-            'The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity, applied arts and digital media technologies. It is designed to develop creative talents for a variety of applied arts industries, including entertainment, education, advertising, film, and corporate communications.',
+          hero: {
+            title: 'Digital Media and Interactive Arts',
+            description:
+              'The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity, applied arts and digital media technologies.',
+            buttons: {
+              primary: 'Objectives',
+              secondary: 'Campus Life',
+            },
+            logo: {
+              image: new URL('@/assets/CPU-MIDAS.png', import.meta.url).href,
+              title: 'MODERN INTERACTIVE DIGITAL ARTISTS SOCIETY',
+            },
+          },
           objectives: [
-            'Exhibit skills, knowledge and leadership to excel in their information technology careers and related disciplines.',
+            'Exhibit skills, knowledge and leadership to excel in their information technology careers and related discipline.',
             'Exhibit high standard of professionalism who are effective members of multi-discipline development teams.',
             'Involved in scholarly activities, research and outreach that contributes to the improvement and transformation of society.',
-            'Demonstrate ethical, professional, spiritual values, and social responsibility associated with their careers.',
+            'Demonstrate ethical, professional, spiritual values, and social responsibility associated with their Information Technology careers and related professions.',
             'Exhibit proficiency in the use of traditional and digital media arts, designing, developing and implementing digital media solutions in fields of entertainment and corporate environments.',
           ],
-          outcomes: [
-            'Articulate and discuss the latest developments in the specific field of practice.',
-            'Effectively communicate orally and in writing using both English and Filipino.',
-            'Work effectively and independently in multi-disciplinary and multi-cultural teams.',
-            'Act in recognition of professional, social and ethical responsibility.',
-            'Preserve and promote "Filipino historical and cultural heritage".',
-          ],
-          rationale:
-            'The program is offered based on CMO 19 s. 2016 which states that an autonomous institution has the privilege to offer new courses. The structure of the course enables students from different disciplines to collaborate and work together to produce the best artworks acceptable to industry standards. Students undergo training to enhance their skills with a talent-centric curriculum for the high-end digital media industry.',
-          careers: [
-            'Animator',
-            'Graphic Designer',
-            'Game Designer',
-            'Web Designer',
-            'Multimedia Artist',
-            'Advertising Executive',
-            'Art Director',
-            'Digital Artist',
-            'Freelance Artist',
-          ],
-          industries: [
-            'Advertising agencies',
-            'Game design companies',
-            'Pre- and post-production houses',
-            'Graphic design firms',
-            'Art studios',
-            'Mobile communication companies',
-            'Magazines and publishers',
-            'Web design companies',
-          ],
+          outcomes: {
+            header: 'Based on CHED Memo Order No. 25 s. 2015 Effective: Academic Year 2018-2019',
+            intro: 'The graduates have the ability to:',
+            list: [
+              '<strong>a)</strong> articulate and discuss the latest developments in the specific field of practice. (Philippine Qualifications Framework (PQF) level 6 descriptor) (Graduate Outcomes: CS 10, IS 10, IT13).',
+              '<strong>b)</strong> effectively communicate orally and in writing using both English and Filipino (Graduate Outcomes: CS08, 1508, IT10).',
+              '<strong>c)</strong> work effectively and independently in multi-disciplinary and multi-cultural teams. (PQF level 6 descriptor) (Graduate Outcomes: CS07, ISO?, IT08).',
+              '<strong>d)</strong> act in recognition of professional, social and ethical responsibility (Graduate Outcomes: CS09, 1509, IT12).',
+              '<strong>e)</strong> preserve and promote "Filipino historical and cultural heritage" (based on RA 7722).',
+            ],
+          },
+          rationale: {
+            title1: 'Curriculum Rationale',
+            text1:
+              'The Bachelor of Science in Digital Media and Interactive Arts (BSDMIA) program is offered based on CMO 19 s 2016 article iii section 11 which states that an autonomous institution has the privilege to offer new course(s)/program(s) in the undergraduate and/or graduate levels. Along with this is the effect of technology in the field of arts and other art related careers. Careers in the field of information technology education (ITE) has expanded in the area of art. This has long been integrated in the ITE programs when multimedia was considered as one of its free elective course. As defined in the animation career review site, interactive arts and media discipline combines the elements of arts, design and technology. Artist in the field typically have advanced skills in the areas of visual design, digital storytelling, time-based media, and shaping interactive experiences. Such is applied in animation to mobile communications to video games. In the program the students are introduced to industry standard tools applications in video editing, animation, 3d modeling, photography, graphic design, video game design and virtual reality. Graduates of the program can have careers in advertising agencies, game design companies, pre- and post – production houses, graphic design firms, art studios, mobile communication companies, magazines, publishers, and web design companies. They can be animator, graphic designer, game designer, web designer, multi-media artist, advertising executive, art director, digital artists, and freelance artist.',
+            title2: 'Curriculum Description',
+            text2:
+              'The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity, applied arts and digital media technologies. It is designed to developing creative talents for a variety of applied arts industries, including but not limited to the entertainment, education, advertising and commercials, films and corporate communications sectors. The structure of the course enable students from different disciplines to collaborate and work together to produce the best artworks acceptable to the industry standards. Students will undergo training and education to enhance their skills with the talent-centric curriculum for the high-end digital media industry.',
+          },
           organization: {
             name: 'Modern Interactive Digital Artists Society (MIDAS)',
             description:
-              'The mission is to help BSDMIA students develop a sense of artistic self-identity and to support and conduct exhibits and outreach activities to increase public awareness of technology and its impact on society.',
+              'The Modern Interactive Digital Artists Society mission is to help the BSDMIA students develop a sense of artistic self-identity and to support and conduct exhibits and outreach activities to increase public awareness to extend the part of technology and its impact to the society; To be the official organization of the Bachelor of Science in Digital Media and Interactive Arts that embodies all the students enrolled in this course under the College of Computer Studies.',
           },
+          graduateOutcomes: [
+            {
+              code: 'DMIA01',
+              description:
+                'Apply knowledge of mathematics, digital media arts exhibit and management, and digital media creation, delivery and consumption appropriate to the field of practice in compliance to established standards and best practices.',
+            },
+            {
+              code: 'DMIA02',
+              description:
+                'Identify user requirements leading to design selection, digital media art creation, evaluation and delivery of digital media- and interactive arts-based solutions.',
+            },
+            {
+              code: 'DMIA03',
+              description: 'Design, merge and bridge traditional arts with digital media.',
+            },
+            {
+              code: 'DMIA04',
+              description:
+                'Deliver and implement creations, and evaluate digital media consumption in entertainment and corporate environments effectively.',
+            },
+            {
+              code: 'DMIA05',
+              description:
+                'Demonstrate the use of current techniques, skills, tools and practices.',
+            },
+            {
+              code: 'DMIA06',
+              description:
+                'Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings.',
+            },
+            {
+              code: 'DMIA07',
+              description:
+                'Recognize professional, ethical, legal, security, and social issues and responsibility.',
+            },
+            {
+              code: 'DMIA08',
+              description: 'Socially communicate effectively with a diverse audience.',
+            },
+            { code: 'DMIA09', description: 'Identify contemporary practices and issues.' },
+            {
+              code: 'DMIA10',
+              description:
+                'Recognize the need for and engage in planning self-learning and improving performance as a foundation for continuing professional development.',
+            },
+          ],
         },
       }
       resolve(programs[programCode] || null)
-    }, 1000)
+    }, 300)
   })
 }

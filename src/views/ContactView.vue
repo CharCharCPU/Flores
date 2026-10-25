@@ -1,6 +1,5 @@
 <script setup>
 import { reactive, ref } from 'vue'
-import { contact } from '../data/content'
 </script>
 
 <template>
@@ -58,9 +57,6 @@ import { contact } from '../data/content'
 
   </div>
 </template>
-
-<script setup>
-</script>
 
 <style scoped>
 .contact-page-container {

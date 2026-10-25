@@ -35,7 +35,7 @@ import { fetchProgramDetails } from '@/backend'
 
 
     <div class="content-wrapper">
-      //PROGRAM EDUCATIONAL OBJECTIVES
+      
       <section id="objectives" class="section-block">
         <h2 class="section-title">PROGRAM EDUCATIONAL OBJECTIVES</h2>
 
@@ -124,7 +124,7 @@ import { fetchProgramDetails } from '@/backend'
         </div>
       </section>
 
-      //CURRICULUM RATIONALE
+      
       <section id="rationale" class="section-block">
         <div class="ched-header">
           <h3>Based on CHED Memo Order No. 25 s. 2015</h3>
@@ -152,7 +152,7 @@ import { fetchProgramDetails } from '@/backend'
         </p>
       </section>
 
-      //CURRICULUM DESCRIPTION
+      
       <section id="description" class="section-block">
         <h3 class="sub-title">Curriculum Description:</h3>
         <ul class="custom-bullets">
@@ -184,7 +184,7 @@ import { fetchProgramDetails } from '@/backend'
         </ul>
       </section>
 
-      //COMPUTER SCIENCE SOCIETY (Campus Life)
+      
       <section id="society" class="society-section">
         <!-- This section mimics the diagonal background split -->
         <div class="society-bg-gold"></div>
@@ -211,7 +211,7 @@ import { fetchProgramDetails } from '@/backend'
         </div>
       </section>
 
-      //GRADUATE OUTCOMES TABLE
+      
       <section id="graduate-outcomes" class="section-block">
         <h2 class="section-title">Bachelor of Science in Information Technology (BSIT)</h2>
 

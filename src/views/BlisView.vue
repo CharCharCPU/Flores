@@ -31,7 +31,7 @@ import { fetchProgramDetails } from '@/backend'
     </header>
 
     <div class="content-wrapper">
-      //PROGRAM EDUCATIONAL OBJECTIVES
+      
       <section id="objectives" class="section-block">
         <h2 class="section-title">PROGRAM EDUCATIONAL OBJECTIVES</h2>
 
@@ -119,8 +119,7 @@ import { fetchProgramDetails } from '@/backend'
           <p>d) utilize modern computing tools <em>(Graduate Outcomes: CSOS, ISOS, IT07).</em></p>
         </div>
       </section>
-
-      //CURRICULUM RATIONALE
+      
       <section id="rationale" class="section-block">
         <div class="ched-header">
           <h3>Based on CHED Memo Order No. 25 s. 2015</h3>
@@ -148,7 +147,7 @@ import { fetchProgramDetails } from '@/backend'
         </p>
       </section>
 
-      //CURRICULUM DESCRIPTION
+      
       <section id="description" class="section-block">
         <h3 class="sub-title">Curriculum Description:</h3>
         <ul class="custom-bullets">

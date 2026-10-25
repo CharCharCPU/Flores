@@ -10,11 +10,17 @@ import NavBar from './components/NavBar.vue'
   </div>
 </template>
 
-<style scoped>
+<style>
 #app {
   font-family: var(--font-body);
   color: var(--ink);
   background-color: var(--paper);
   min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a1f1e;
 }
 </style>

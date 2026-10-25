@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
 const routes = [
   { path: '/',
     name: 'home',
@@ -10,6 +11,13 @@ const routes = [
     name: 'about',
     component: () => import('../views/AboutView.vue'),
     meta: { title: 'About the College' }
+  },
+
+  {
+    path: '/programs',
+    name: 'programs',
+    component: () => import('../views/ProgramsView.vue'),
+    meta: { title: 'Our Programs' }
   },
 
   { path: '/programs/bsit',

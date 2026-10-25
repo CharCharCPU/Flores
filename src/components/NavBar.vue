@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
+import ccsLogo from '@/assets/ccs-logo.png'
 
 const isProgramsOpen = ref(false)
 const togglePrograms = () => {
@@ -11,8 +12,10 @@ const togglePrograms = () => {
 <template>
   <nav class="css-navbar">
     <div class="nav-container">
-      <!-- Logo placeholder (replace with actual logo) -->
-      <div class="nav-logo"></div>
+      <!-- Logo -->
+      <RouterLink to="/" class="nav-logo-link">
+        <img :src="ccsLogo" alt="CCS Logo" class="nav-logo-img" />
+      </RouterLink>
 
       <ul class="nav-links">
         <li><RouterLink to="/" active-class="active">Home</RouterLink></li>
@@ -25,6 +28,8 @@ const togglePrograms = () => {
             <span class="arrow">▼</span>
           </button>
           <ul v-if="isProgramsOpen" class="dropdown-menu">
+            <li><RouterLink to="/programs" active-class="active">All Programs</RouterLink></li>
+            <li class="divider"></li>
             <li><RouterLink to="/programs/bsit" active-class="active">BS Information Technology</RouterLink></li>
             <li><RouterLink to="/programs/bscs" active-class="active">BS Computer Science</RouterLink></li>
             <li><RouterLink to="/programs/bsdmia" active-class="active">BS Digital Media & Interactive Arts</RouterLink></li>
@@ -42,11 +47,11 @@ const togglePrograms = () => {
 
 <style scoped>
 .css-navbar {
-  background-color: var(--white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0a1f1e; /* Dark Teal */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -54,16 +59,20 @@ const togglePrograms = () => {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 64px;
+  height: 72px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.nav-logo {
-  width: 40px;
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-img {
   height: 40px;
-  background-color: var(--main);
-  border-radius: 8px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -71,23 +80,24 @@ const togglePrograms = () => {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 24px;
+  gap: 28px;
   align-items: center;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--ink);
+  color: #ffffff;
   font-weight: 500;
+  font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: var(--main);
+  color: #fca311; /* Gold */
 }
 
 .nav-links a.active {
-  color: var(--main);
+  color: #fca311;
   font-weight: 600;
 }
 
@@ -100,35 +110,37 @@ const togglePrograms = () => {
   background: none;
   border: none;
   font: inherit;
-  color: var(--ink);
+  color: #ffffff;
   font-weight: 500;
+  font-size: 0.95rem;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   padding: 0;
 }
 
 .dropdown-toggle:hover {
-  color: var(--main);
+  color: #fca311;
 }
 
 .arrow {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  color: #fca311;
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--white);
-  border: 1px solid var(--line);
+  background: #0a1f1e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   list-style: none;
   margin: 0;
   padding: 8px 0;
-  min-width: 260px;
+  min-width: 280px;
   z-index: 200;
 }
 
@@ -138,20 +150,25 @@ const togglePrograms = () => {
 
 .dropdown-menu a {
   display: block;
-  padding: 10px 16px;
-  color: var(--ink);
+  padding: 12px 20px;
+  color: #ffffff;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .dropdown-menu a:hover {
-  background: var(--main-soft);
-  color: var(--sub-dark);
+  background: rgba(252, 163, 17, 0.1);
+  color: #fca311;
 }
 
 .dropdown-menu a.active {
-  background: var(--main-soft);
-  color: var(--sub-dark);
+  color: #fca311;
   font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
 }
 </style>

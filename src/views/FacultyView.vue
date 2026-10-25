@@ -227,25 +227,25 @@ const staffMembers = [
 <style scoped>
 .faculty-page-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f9;
+  background-color: #0a1f1e;
   padding-bottom: 5rem;
 }
 
 .small-text {
   font-size: 0.9rem;
-  color: #a0a0a0;
+  color: #a0aab2;
   margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
 }
 
 .small-text-dark {
   font-size: 0.85rem;
-  color: #555;
+  color: #a0aab2;
   margin-bottom: 0.5rem;
 }
 
 .faculty-hero {
-  background: linear-gradient(135deg, #222 0%, #333 100%);
+  background: linear-gradient(135deg, #071514 0%, #0a1f1e 100%);
   text-align: center;
   padding: 5rem 2rem;
   color: white;
@@ -254,12 +254,12 @@ const staffMembers = [
 .faculty-hero .main-title {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #d4af37;
+  color: #fca311;
   margin: 0;
 }
 
 .meet-our-people {
-  background-color: #e6ebf2;
+  background-color: #071514;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -274,7 +274,7 @@ const staffMembers = [
 }
 
 .left-title {
-  border-left: 2px solid #d4af37;
+  border-left: 2px solid #fca311;
   padding-left: 1.5rem;
   flex: 1;
 }
@@ -282,7 +282,7 @@ const staffMembers = [
 .left-title h2 {
   font-family: 'Georgia', serif;
   font-size: 3.5rem;
-  color: #333;
+  color: #ffffff;
   margin: 0;
   line-height: 1.1;
   font-weight: normal;
@@ -292,7 +292,7 @@ const staffMembers = [
   flex: 2;
   display: flex;
   gap: 2rem;
-  color: #555;
+  color: #a0aab2;
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -307,7 +307,7 @@ const staffMembers = [
 .section-heading {
   font-family: 'Georgia', serif;
   font-size: 2rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 2.5rem;
   font-weight: normal;
 }
@@ -329,8 +329,8 @@ const staffMembers = [
 .hover-card {
   position: relative;
   overflow: hidden;
-  border: 3px solid #d4af37;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fca311;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   width: 100%;
   max-width: 250px;
@@ -355,8 +355,7 @@ const staffMembers = [
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(30, 45, 65, 0.85); /* Dark blue tint */
-
+  background-color: rgba(7, 21, 20, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -372,7 +371,7 @@ const staffMembers = [
 }
 
 .person-name {
-  color: #d4af37;
+  color: #fca311;
   font-size: 1.1rem;
   margin: 0 0 0.5rem 0;
   line-height: 1.3;
@@ -398,8 +397,8 @@ const staffMembers = [
   align-items: center;
   width: 32px;
   height: 32px;
-  background-color: #d4af37;
-  color: #333;
+  background-color: #fca311;
+  color: #0a1f1e;
   border-radius: 50%;
   text-decoration: none;
   font-weight: bold;
@@ -412,7 +411,7 @@ const staffMembers = [
 
 .social-icons .icon:hover {
   background-color: #ffffff;
-  color: #1e2d41;
+  color: #0a1f1e;
 }
 
 @media (max-width: 768px) {
@@ -424,7 +423,7 @@ const staffMembers = [
 
   .left-title {
     border-left: none;
-    border-top: 2px solid #d4af37;
+    border-top: 2px solid #fca311;
     padding-left: 0;
     padding-top: 1rem;
   }

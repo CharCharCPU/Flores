@@ -1,5 +1,6 @@
 <script setup>
-import { programs } from '../data/content'
+import { fetchProgramDetails } from '@/backend'
+
 </script>
 
 <template>

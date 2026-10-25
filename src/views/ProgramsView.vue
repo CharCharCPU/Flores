@@ -1,5 +1,15 @@
 <script setup>
-import { programs } from '../data/content'
+import { ref, onMounted } from 'vue'
+import { fetchAllPrograms } from '@/backend'
+import PageHero from '@/components/PageHero.vue'
+
+const programs = ref([])
+const loading = ref(true)
+
+onMounted(async () => {
+  programs.value = await fetchAllPrograms()
+  loading.value = false
+})
 </script>
 
 <template>

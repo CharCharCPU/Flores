@@ -15,6 +15,14 @@ const routes = [
     meta: { title: 'About the College' },
   },
 
+   {
+    path: '/news-events-announcements',
+    name: 'news-events-announcements',
+    component: () => import('../views/AnnouncementsView.vue'),
+    meta: { title: 'Announcements' },
+  },
+
+  
   {
     path: '/programs',
     name: 'programs',

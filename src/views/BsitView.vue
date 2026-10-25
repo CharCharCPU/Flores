@@ -25,7 +25,7 @@ import { fetchProgramDetails } from '@/backend'
 
         <div class="hero-logo">
           <img
-            src="https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/1-2048x2048.png"
+            src="../assets/CPU-ITSO.png"
             alt="Information Technology Society Logo"
           />
           <h3>INFORMATION TECHNOLOGY<br />SOCIETY</h3>
@@ -193,7 +193,7 @@ import { fetchProgramDetails } from '@/backend'
         <div class="society-content">
           <div class="society-logo">
             <img
-              src="https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/1-2048x2048.png"
+              src="../assets/CPU-ITSO.png"
               alt="Info"
             />
             <h3>Information Technology Students Organization</h3>
@@ -225,83 +225,94 @@ import { fetchProgramDetails } from '@/backend'
             </thead>
             <tbody>
               <tr>
-                <td>CS01</td>
+                <td>IT01</td>
                 <td>
-                  Apply knowledge of computing fundamentals, knowledge of a computing
-                  specialization, and mathematics, science, and domain knowledge appropriate for the
-                  computing specialization to the abstraction and conceptualization of computing
-                  models from defined problems and requirements.
+                  Apply knowledge of computing, science, and mathematics appropriate to the discipline.
                 </td>
               </tr>
               <tr>
-                <td>CS02</td>
+                <td>IT02</td>
                 <td>
-                  Identify, analyze, formulate, research literature, and solve complex computing
-                  problems and requirements reaching substantiated conclusions using fundamental
-                  principles of mathematics, computing sciences, and relevant domain disciplines.
+                  Understand best practices and standards and their applications.
                 </td>
               </tr>
               <tr>
-                <td>CS03</td>
+                <td>IT03</td>
                 <td>
-                  An ability to apply mathematical foundations, algorithmic principles and computer
-                  science theory in the modeling and design of computer-based systems in a way that
-                  demonstrates comprehension of the tradeoffs involved in decision choices.
+                  Analyze complex problems, and identify and define the computing requirements appropriate to
+                  its solution.
                 </td>
               </tr>
               <tr>
-                <td>CS04</td>
+                <td>IT04</td>
                 <td>
-                  Knowledge and understanding of information security issues in relation to the
-                  design, development and use of information systems.
+                  Identify and analyze user needs and take them into account in the
+                  selection, creation, evaluation and administration of computer-based systems.
                 </td>
               </tr>
               <tr>
-                <td>CS05</td>
+                <td>IT05</td>
                 <td>
-                  Design and evaluate solutions for complex computing problems, and design and
-                  evaluate systems, components, or processes that meet specified needs with
-                  appropriate consideration for public health and safety, cultural, societal, and
-                  environmental considerations.
+                  Design, implement, and evaluate computer-based systems, processes, components, or
+                  programs to meet desired needs and requirements under various constraints.
                 </td>
               </tr>
               <tr>
-                <td>CS06</td>
+                <td>IT05</td>
                 <td>
-                  Create, select, adapt and apply appropriate techniques, resources and modern
-                  computing tools to complex computing activities, with an understanding of the
-                  limitations to accomplish a common goal.
+                  Design, implement, and evaluate computer-based systems, processes, components, or
+                  programs to meet desired needs and requirements under various constraints.
                 </td>
               </tr>
               <tr>
-                <td>CS07</td>
+                <td>IT06</td>
                 <td>
-                  Function effectively as an individual and as a member or leader in diverse teams
-                  and in multidisciplinary settings.
+                  Integrate IT-based solutions into the user environment effectively.
+                </td>
+              </tr>
+
+              <tr>
+                <td>IT07</td>
+                <td>
+                  Apply knowledge through the use of current techniques, skills, tools and practices necessary for the IT profession.
                 </td>
               </tr>
               <tr>
-                <td>CS08</td>
+                <td>IT08</td>
                 <td>
-                  Communicate effectively with the computing community and with society at large
-                  about complex computing activities by being able to comprehend and write effective
-                  reports, design documentation, make effective presentations, and give and
-                  understand clear instructions.
+                  Function effectively as a member or leader of a development team recognizing the different roles within a team to accomplish a common goal.
+                </td>
+              </tr>
+
+              <tr>
+                <td>IT09</td>
+                <td>
+                  Assist in the creation of an effective IT project plan.
                 </td>
               </tr>
               <tr>
-                <td>CS09</td>
+                <td>IT10</td>
                 <td>
-                  An ability to recognize the legal, social, ethical and professional issues
-                  involved in the utilization of computer technology and be guided by the adoption
-                  of appropriate professional, ethical and legal practices.
+                  Communicate effectively with the computing community and with society at large about complex computing activities through logical writing, presentations, and clear instructions.
                 </td>
               </tr>
               <tr>
-                <td>CS10</td>
+                <td>IT11</td>
                 <td>
-                  Recognize the need, and have the ability, to engage in independent learning for
-                  continual development as a computing professional.
+                  Analyze the local and global impact of computing information technology on individuals, organizations, and society.
+                </td>
+              </tr>
+              <tr>
+                <td>IT12</td>
+                <td>
+                  Understand professional, ethical, legal, security and social issues and responsibilities in the utilization of information technology.
+                </td>
+              </tr>
+
+              <tr>
+                <td>IT13</td>
+                <td>
+                  Recognize the need for and engage in planning self-learning and improving performance as a foundation for continuing professional development.
                 </td>
               </tr>
             </tbody>

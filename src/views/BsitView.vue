@@ -4,7 +4,7 @@ import { fetchProgramDetails } from '@/backend'
 
 <template>
   <div class="bscs-page-container">
-    //HERO SECTION
+
     <header class="hero-section">
       <div class="bg-shape shape-gold"></div>
       <div class="bg-shape shape-dark-green"></div>
@@ -33,7 +33,7 @@ import { fetchProgramDetails } from '@/backend'
       </div>
     </header>
 
-    //MAIN CONTENT WRAPPER
+
     <div class="content-wrapper">
       //PROGRAM EDUCATIONAL OBJECTIVES
       <section id="objectives" class="section-block">
@@ -315,8 +315,8 @@ import { fetchProgramDetails } from '@/backend'
 <style scoped>
 .bscs-page-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  background-color: #f8f9fa;
+  color: #ffffff;
+  background-color: #0a1f1e;
   scroll-behavior: smooth;
 }
 
@@ -329,7 +329,7 @@ import { fetchProgramDetails } from '@/backend'
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #0a1f1e;
   padding-top: 80px;
 }
 
@@ -343,13 +343,13 @@ import { fetchProgramDetails } from '@/backend'
 }
 
 .shape-gold {
-  background-color: #d4a017;
+  background-color: #fca311;
   clip-path: polygon(0 0, 100% 0, 30% 100%, 0 100%);
   z-index: 2;
 }
 
 .shape-dark-green {
-  background-color: #3b4a45;
+  background-color: #071514;
   clip-path: polygon(100% 0, 100% 100%, 30% 100%);
   z-index: 1;
 }
@@ -381,7 +381,7 @@ import { fetchProgramDetails } from '@/backend'
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: #064d1d;
 }
 
 .hero-buttons {
@@ -405,13 +405,14 @@ import { fetchProgramDetails } from '@/backend'
 }
 
 .btn-dark {
-  background-color: #1e3a5f;
-  color: white;
+  background-color: #fca311;
+  color: #0a1f1e;
 }
 
 .btn-green {
-  background-color: #4caf50;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-logo {
@@ -421,11 +422,15 @@ import { fetchProgramDetails } from '@/backend'
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #333;
+  color: #ffffff;
 }
 
 .hero-logo img {
   width: 150px;
+  height: 150px;
+  padding: 12px;
+  background-color: #ffffff;
+  object-fit: contain;
   margin-bottom: 1rem;
   border-radius: 10px;
 }
@@ -440,7 +445,7 @@ import { fetchProgramDetails } from '@/backend'
   max-width: 1000px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  background-color: #f8f9fa;
+  background-color: #0a1f1e;
 }
 
 .section-block {
@@ -450,7 +455,7 @@ import { fetchProgramDetails } from '@/backend'
 .section-title {
   text-align: center;
   font-size: 1.5rem;
-  color: #1e3a5f;
+  color: #fca311;
   margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -458,7 +463,7 @@ import { fetchProgramDetails } from '@/backend'
 
 .sub-title {
   font-size: 1.1rem;
-  color: #333;
+  color: #ffffff;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -466,7 +471,7 @@ import { fetchProgramDetails } from '@/backend'
 .text-content {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #555;
+  color: #a0aab2;
 }
 
 .text-content p {
@@ -488,7 +493,7 @@ import { fetchProgramDetails } from '@/backend'
 }
 
 .anchor-links li a {
-  color: #2a7cc7;
+  color: #fca311;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -501,14 +506,14 @@ import { fetchProgramDetails } from '@/backend'
   text-align: center;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #333;
+  color: #ffffff;
 }
 
 .custom-bullets {
   padding-left: 1.5rem;
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #555;
+  color: #a0aab2;
 }
 
 .custom-bullets > li {
@@ -519,7 +524,7 @@ import { fetchProgramDetails } from '@/backend'
   list-style-type: none;
   padding-left: 1rem;
   margin-top: 0.5rem;
-  border-left: 2px solid #ccc;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .sub-bullets li {
@@ -536,7 +541,7 @@ import { fetchProgramDetails } from '@/backend'
   justify-content: center;
   overflow: hidden;
   margin: 4rem 0;
-  background-color: #f8f9fa;
+  background-color: #071514;
 }
 
 .society-bg-gold {
@@ -545,7 +550,7 @@ import { fetchProgramDetails } from '@/backend'
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #d4a017;
+  background-color: #fca311;
   clip-path: polygon(0 0, 50% 0, 20% 100%, 0 100%);
   z-index: 1;
 }
@@ -556,7 +561,7 @@ import { fetchProgramDetails } from '@/backend'
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2c3e35;
+  background-color: #071514;
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 20% 100%);
   z-index: 1;
 }
@@ -575,18 +580,21 @@ import { fetchProgramDetails } from '@/backend'
 .society-logo {
   flex: 1;
   text-align: center;
-  color: #1e3a5f;
+  color: #ffffff;
 }
 
 .society-logo img {
   width: 180px;
   margin-bottom: 1rem;
   border-radius: 10px;
+  padding: 12px;
+  background-color: #ffffff;
+  object-fit: contain;
 }
 
 .society-text {
   flex: 2;
-  color: #e0e0e0;
+  color: #ffffff;
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -599,29 +607,31 @@ import { fetchProgramDetails } from '@/backend'
 .outcomes-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .outcomes-table th,
 .outcomes-table td {
   padding: 1rem;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
   line-height: 1.5;
+  color: #a0aab2;
 }
 
 .outcomes-table th {
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.05);
   font-weight: 600;
-  color: #333;
+  color: #ffffff;
   width: 20%;
 }
 
 .outcomes-table td:first-child {
   font-weight: bold;
-  color: #1e3a5f;
+  color: #fca311;
 }
 
 /*Mobile Responsiveness*/

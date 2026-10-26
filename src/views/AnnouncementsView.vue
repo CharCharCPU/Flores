@@ -86,6 +86,7 @@ onMounted(async () => {
   gap: 15px;
   justify-content: flex-start;
   align-items: stretch;
+  justify-content: center;
 }
 
 .card {

@@ -28,7 +28,7 @@ import { fetchProgramDetails } from '@/backend'
             src="../assets/CPU-ITSO.png"
             alt="Information Technology Society Logo"
           />
-          <h3>INFORMATION TECHNOLOGY<br />SOCIETY</h3>
+          <h3>Information Technology Students Organization</h3>
         </div>
       </div>
     </header>

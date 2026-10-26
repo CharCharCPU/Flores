@@ -20,9 +20,12 @@ const togglePrograms = () => {
       <ul class="nav-links">
         <li><RouterLink to="/" active-class="active">Home</RouterLink></li>
         <li><RouterLink to="/about" active-class="active">About Us</RouterLink></li>
-
         <!-- Academic Programs dropdown -->
-        <li class="dropdown" @mouseenter="isProgramsOpen = true" @mouseleave="isProgramsOpen = false">
+        <li
+          class="dropdown"
+          @mouseenter="isProgramsOpen = true"
+          @mouseleave="isProgramsOpen = false"
+        >
           <button class="dropdown-toggle" @click="togglePrograms">
             Academic Programs
             <span class="arrow">▼</span>
@@ -30,15 +33,33 @@ const togglePrograms = () => {
           <ul v-if="isProgramsOpen" class="dropdown-menu">
             <li><RouterLink to="/programs" active-class="active">All Programs</RouterLink></li>
             <li class="divider"></li>
-            <li><RouterLink to="/programs/bsit" active-class="active">BS Information Technology</RouterLink></li>
-            <li><RouterLink to="/programs/bscs" active-class="active">BS Computer Science</RouterLink></li>
-            <li><RouterLink to="/programs/bsdmia" active-class="active">BS Digital Media & Interactive Arts</RouterLink></li>
-            <li><RouterLink to="/programs/blis" active-class="active">BS Library & Information Science</RouterLink></li>
+            <li>
+              <RouterLink to="/programs/information-technology" active-class="active"
+                >BS Information Technology</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink to="/programs/computer-science" active-class="active"
+                >BS Computer Science</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink to="/programs/digital-media-and-interactive-arts" active-class="active"
+                >BS Digital Media & Interactive Arts</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink to="/programs/library-and-information-science" active-class="active"
+                >Library & Information Science</RouterLink
+              >
+            </li>
           </ul>
         </li>
 
         <li><RouterLink to="/faculty" active-class="active">Faculty and Staff</RouterLink></li>
-        <li><RouterLink to="/news" active-class="active">Event Calendar</RouterLink></li>
+        <li>
+          <RouterLink to="/news-announcements" active-class="active">Announcements</RouterLink>
+        </li>
         <li><RouterLink to="/contact" active-class="active">Contact Us</RouterLink></li>
       </ul>
     </div>
@@ -153,7 +174,9 @@ const togglePrograms = () => {
   padding: 12px 20px;
   color: #ffffff;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .dropdown-menu a:hover {

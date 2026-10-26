@@ -15,13 +15,6 @@ const routes = [
     meta: { title: 'About the College' },
   },
 
-   {
-    path: '/news-events-announcements',
-    name: 'news-events-announcements',
-    component: () => import('../views/AnnouncementsView.vue'),
-    meta: { title: 'Announcements' },
-  },
-
   
   {
     path: '/programs',
@@ -66,8 +59,8 @@ const routes = [
   },
 
   {
-    path: '/news',
-    name: 'news',
+    path: '/news-announcements',
+    name: 'news-announcements',
     component: () => import('../views/NewsView.vue'),
     meta: { title: 'News, Events and Announcements' },
   },

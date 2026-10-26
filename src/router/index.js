@@ -18,7 +18,7 @@ const routes = [
    {
     path: '/news-events-announcements',
     name: 'news-events-announcements',
-    component: () => import('../views/AnnouncementsView.vue'),
+    component: () => import('../views/NewsView.vue'),
     meta: { title: 'Announcements' },
   },
 

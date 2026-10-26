@@ -66,8 +66,8 @@ const routes = [
   },
 
   {
-    path: '/news',
-    name: 'news',
+    path: '/news-announcements',
+    name: 'news-announcements',
     component: () => import('../views/NewsView.vue'),
     meta: { title: 'News, Events and Announcements' },
   },

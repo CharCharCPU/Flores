@@ -115,111 +115,111 @@ const deanInfo = {
   name: 'MA. CHRISTINA A. QUIJANO, MSCS',
   title: 'DEAN',
   imageUrl:
-    'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
+    'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/quijano-e1637132499305.png',
 }
 
 const departmentHeads = [
   {
-    name: 'Dept Head 1',
-    title: 'BSCS Coordinator',
+    name: 'REA P. BALONTONG, MBA',
+    title: 'DEPARTMENT HEAD(IT & IS)',
     imageUrl:
-      'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/balontong-754x1024.jpg',
   },
   {
-    name: 'Dept Head 2',
-    title: 'BSIT Coordinator',
+    name: 'MARJEE ROSE B. PARRENO, MSCS, MBA',
+    title: 'PROGRAM COORDINATOR (BSCS, BSDMIA, and MSCS)',
     imageUrl:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/parreno-754x1024.jpg',
   },
   {
-    name: 'Dept Head 3',
-    title: 'BSDMIA Coordinator',
+    name: 'ANA MAE B. CANTEL. MLIS',
+    title: 'PROGRAM COORDINATOR (BLIS and MLIS)',
     imageUrl:
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/cantel-754x1024.jpg',
   },
   {
-    name: 'Dept Head 4',
-    title: 'BLIS Coordinator',
+    name: 'LENNON D. PAJAR',
+    title: 'COMPUTER LABORATORY COORDINATOR',
     imageUrl:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/pajar-754x1024.jpg',
   },
 ]
 
 const facultyMembers = [
   {
-    name: 'Faculty 1',
-    title: 'Assistant Professor',
+    name: 'LEO PAULO B. BELDIA',
+    title: 'BSIT AND BSIS PROGRAM',
     imageUrl:
-      'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/beldia-754x1024.jpg',
   },
   {
-    name: 'Faculty 2',
-    title: 'Instructor',
+    name: 'PEDRO PETER RHYS B. CAMBRONERO, MSCS',
+    title: 'BSCS PROGRAM',
     imageUrl:
       'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop',
   },
   {
-    name: 'Faculty 3',
-    title: 'Instructor',
+    name: 'LESLEY JOY L. DIGNADICE, MBA',
+    title: 'BSIT AND BSIS PROGRAM',
     imageUrl:
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/dignadice-1-754x1024.jpg',
   },
   {
-    name: 'Faculty 4',
-    title: 'Assistant Professor',
+    name: 'RODOLFO C. EREGIA, JR.',
+    title: 'BSIT AND BSIS PROGRAM',
     imageUrl:
-      'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/eregia-754x1024.jpg',
   },
   {
-    name: 'Faculty 5',
-    title: 'Instructor',
+    name: 'DONIE S. JARDELEZA, MSCS',
+    title: 'BSIT AND BSIS PROGRAM',
     imageUrl:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/jardleza-754x1024.jpg',
   },
   {
-    name: 'Faculty 6',
-    title: 'Instructor',
+    name: 'ANTONIO M. MONTANO, JR.',
+    title: 'BSIT AND BSIS PROGRAM',
     imageUrl:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/montano-754x1024.jpg',
   },
   {
-    name: 'Faculty 7',
-    title: 'Assistant Professor',
+    name: 'ROSE LEAH JOY A. OJACASTRO, MSCS',
+    title: 'BSIT AND BSIS PROGRAM',
     imageUrl:
-      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/ojacastro-754x1024.jpg',
   },
   {
-    name: 'Faculty 8',
-    title: 'Instructor',
+    name: 'MA. SHEILA C. SAPUL, Ph. D.',
+    title: 'BSCS PROGRAM',
     imageUrl:
-      'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/sapul-754x1024.jpg',
   },
 ]
 
 const staffMembers = [
   {
-    name: 'Staff 1',
-    title: 'Secretary',
+    name: 'CHRISLYN C. CASTANO',
+    title: 'SECRETARY',
     imageUrl:
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/castano-754x1024.jpg',
   },
   {
-    name: 'Staff 2',
-    title: 'Lab Assistant',
+    name: 'A.M.P. LATTER P. TAASAN',
+    title: 'COMPUTER LABORATORY TECHNICIAN',
     imageUrl:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/taasan-754x1024.jpg',
   },
   {
-    name: 'Staff 3',
-    title: 'Administrative Aide',
+    name: 'CHRISELDA ELAINE ADOR',
+    title: 'GUIDANCE COUNSELOR',
     imageUrl:
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/ador-754x1024.jpg',
   },
   {
-    name: 'Staff 4',
-    title: 'Office Clerk',
+    name: 'DONNA MAY RIVERA',
+    title: 'LIBRARY LIAISON OFFICER',
     imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400&auto=format&fit=crop',
+      'https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/rivera-754x1024.png',
   },
 ]
 </script>
@@ -359,7 +359,10 @@ const staffMembers = [
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1.5rem; 
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+  box-sizing: border-box; 
   text-align: left;
 
   opacity: 0;
@@ -372,7 +375,11 @@ const staffMembers = [
 
 .person-name {
   color: #fca311;
-  font-size: 1.1rem;
+  font-size: 1.2rem; 
+  line-height: 1.3; 
+  margin-bottom: 0.5rem;
+  white-space: normal; 
+  width: 100%;
   margin: 0 0 0.5rem 0;
   line-height: 1.3;
   text-transform: uppercase;
@@ -380,7 +387,10 @@ const staffMembers = [
 
 .person-title {
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  white-space: normal;
+  width: 100%;
   margin: 0 0 1.5rem 0;
   font-weight: 600;
   letter-spacing: 1px;

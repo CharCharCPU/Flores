@@ -50,7 +50,7 @@ const togglePrograms = () => {
             </li>
             <li>
               <RouterLink to="/programs/library-and-information-science" active-class="active"
-                >BS Library & Information Science</RouterLink
+                >Library & Information Science</RouterLink
               >
             </li>
           </ul>

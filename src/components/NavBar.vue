@@ -20,7 +20,7 @@ const togglePrograms = () => {
       <ul class="nav-links">
         <li><RouterLink to="/" active-class="active">Home</RouterLink></li>
         <li><RouterLink to="/about" active-class="active">About Us</RouterLink></li>
-
+        <li><RouterLink to="/news-events-announcements" active-class="active">Announcements</RouterLink></li>
         <!-- Academic Programs dropdown -->
         <li
           class="dropdown"

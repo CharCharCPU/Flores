@@ -18,7 +18,7 @@ onMounted(async () => {
 
   <div v-else class="about-page">
     <PageHero
-      title="News and Events"
+      title="News and Updates"
       subtitle="Discover our latest news, upcoming events, and important announcements."
     />
 

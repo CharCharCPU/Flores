@@ -44,9 +44,8 @@ import { contact } from '../data/content'
     </section>
 
     <section class="map-section">
-      //Replace with actual google map location
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.326944573678!2d122.56323307597251!3d10.72950238941414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee50f50d7c3e9%3A0x6b81f75e51b98d61!2sCentral%20Philippine%20University!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph" 
+        src="https://www.google.com/maps/place/Central+Philippine+University/@10.731395,122.5443325,796m/data=!3m1!1e3!4m10!1m2!2m1!1sMary+Thomas+Hall+Central+Philippine+University+Lopez+Jaena,+St.,+Jaro,+Iloilo+City!3m6!1s0x33aee4d82b80eef7:0x1c5b598c2f3b43aa!8m2!3d10.731395!4d122.5469074!15sClJNYXJ5IFRob21hcyBIYWxsIENlbnRyYWwgUGhpbGlwcGluZSBVbml2ZXJzaXR5IExvcGV6IEphZW5hLCBTdC4sIEphcm8sIElsb2lsbyBDaXR5WlAiTm1hcnkgdGhvbWFzIGhhbGwgY2VudHJhbCBwaGlsaXBwaW5lIHVuaXZlcnNpdHkgbG9wZXogamFlbmEgc3QgamFybyBpbG9pbG8gY2l0eZIBEnJlc2VhcmNoX2luc3RpdHV0ZZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSS2RHVnVYMWRCRUFF4AEA-gEECAAQJg!16zL20vMDZ3c2Zq?hl=en-US&entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" 
         width="100%" 
         height="100%" 
         style="border:0;" 

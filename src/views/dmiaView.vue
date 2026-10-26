@@ -522,7 +522,7 @@ onMounted(async () => {
     gap: 2rem;
   }
 
-  .org-left {
+  .org-left { 
     flex: 1;
   }
 

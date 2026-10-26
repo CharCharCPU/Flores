@@ -22,96 +22,95 @@ onMounted(async () => {
       subtitle="Discover our latest news, upcoming events, and important announcements."
     />
 
-    <!-- HISTORY SECTION -->
-    <section class="section-padding">
-      <div class="container">
-        <div class="history-layout">
-          <div class="history-title">
-            <h2>Our History</h2>
-            <div class="gold-line"></div>
-          </div>
-          <div class="history-content">
-            <p v-for="(paragraph, index) in about.history" :key="index">
-              {{ paragraph }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="card-container">
 
-    <!-- VISION, MISSION, QUALITY POLICY -->
-    <section class="section-padding bg-darker">
-      <div class="container">
-        <div class="section-header">
-          <h2>Vision, Mission & Quality Policy</h2>
-          <p>The guiding principles that shape our academic community.</p>
-        </div>
-
-        <div class="grid-3">
-          <!-- Vision -->
-          <div class="card">
-            <div class="card-icon">👁️</div>
-            <h3 class="card-title">Our Vision</h3>
-            <p class="card-desc">{{ about.vision }}</p>
-          </div>
-
-          <!-- Mission -->
-          <div class="card">
-            <div class="card-icon">🎯</div>
-            <h3 class="card-title">Our Mission</h3>
-            <p class="card-desc">{{ about.mission }}</p>
-          </div>
-
-          <!-- Quality Policy -->
-          <div class="card">
-            <div class="card-icon">⭐</div>
-            <h3 class="card-title">Quality Policy</h3>
-            <p class="card-desc">{{ about.qualityPolicy }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DEAN'S MESSAGE -->
-    <section class="section-padding">
-      <div class="container">
-        <div class="dean-card">
-          <div class="quote-mark">“</div>
-          <h2 class="dean-title">Message of the Dean</h2>
-          <div class="dean-text">
-            <p v-for="(paragraph, index) in about.deanMessage.paragraphs" :key="index">
-              {{ paragraph }}
-            </p>
-          </div>
-          <div class="dean-signature">
-            <strong>{{ about.deanMessage.signature }}</strong
-            ><br />
-            {{ about.deanMessage.role }}
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LINKAGES -->
-    <section class="section-padding bg-darker">
-      <div class="container">
-        <div class="section-header">
-          <h2>Linkages & Partners</h2>
-          <p>Building bridges between the academe and the industry.</p>
-        </div>
-
-        <div class="linkages-grid">
-          <div v-for="(linkage, index) in about.linkages" :key="index" class="linkage-card">
-            <h3>{{ linkage.title }}</h3>
-            <p>{{ linkage.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="card">
+    <img class="card-img" src="https://ccs.cpu.edu.ph/wp-content/uploads/2021/12/12072021-Outreach-MOA-1370x550.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Community Engagement MOA Signing Ceremony</h4>
+      <p class="card-text">Memorandum of Agreement signing between Central Philippine University (CPU) College...</p>
+      <br>
+      <a href=" " class="button">See More</a>
+    </div>
   </div>
+  <br>
+
+  <div class="card">
+    <img class="card-img" src="https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/11232021-New-Librarians-843x550.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Congratulations to our New Librarians!</h4>
+      <p class="card-text">Congratulations to our New Librarians!  60% CPU passing percentage (1st...</p>
+      <br>
+      <a href=" " class="button">See More</a>
+    </div>
+  </div>
+  <br>
+
+  <div class="card">
+    <img class="card-img" src="https://ccs.cpu.edu.ph/wp-content/uploads/2021/11/11232021-Kation-1080x550.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Kation Technologies hires CCS graduates</h4>
+      <p class="card-text">Congratulations to our New Librarians!  60% CPU passing percentage (1st...</p>
+      <br>
+      <a href=" " class="button">See More</a>
+    </div>
+  </div>
+  <br>
+</div>
+
+</div>
+
+
+
+
+  
+
 </template>
 
 <style scoped>
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 2px;
+}
+
+.card-container {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.card {
+  width:300px;
+  background-color: #0a1f1e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1rem;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.button {
+  background-color: #ffb835;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 100px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
 .about-page {
   background-color: #0a1f1e;
   color: #ffffff;
